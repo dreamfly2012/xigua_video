@@ -38,7 +38,7 @@ def addMusic(video, audio):
     # 保存视频
     videoclip.write_videofile("output_video.mp4", threads = 8, fps=24)
 
-def scray_site():
+def scrapy_site():
     driver = webdriver.Chrome('./chromedriver')
     #用driver打开百度页面  后面的地址是百度的地址
     url = 'https://www.ixigua.com/7083014337547371049'
@@ -58,6 +58,7 @@ def scray_site():
 
 
 if __name__ == "__main__":
+    scrapy_site()
     addMusic("video.mp4", "audio.mp4")
     pass
 
